@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore movie</title>
+  <link rel="stylesheet" href="explore.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <img class="logo" src="./image/media.svg" />
+      <input type="checkbox" id="checked">
+      <label for="checked" class="showBtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <nav class="navbar">
+        <a href="index.html">About</a>
+        <a href="./explore.html">Explore</a>
+        <a href="#social-media">Contact us</a>
+        <label for="checked" class="hideBtn">
+          <i class="fas fa-times"></i>
+        </label>
+      </nav>
+    </header>
+    <main>
+      <div class="search-bar">
+        <form>
+          <input type="text" id="input-value" placeholder="Type to search">
+          <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <div id="searchMovie"></div>
+      <div id="movieContainer"></div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <script src="getApi.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
