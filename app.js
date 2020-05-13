@@ -50,7 +50,7 @@ searchBtn.addEventListener("click", event => {
 
 function createIframe(video) {
   const iframe = document.createElement("iframe")
-  iframe.src = `http://www.youtube.com/embed/${video.key}`
+  iframe.src = `https://www.youtube.com/embed/${video.key}`
   iframe.allowFullscreen = true
   return iframe
 }
